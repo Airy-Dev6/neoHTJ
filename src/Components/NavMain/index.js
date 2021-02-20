@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Col, NavbarBrand } from "reactstrap";
+import './style.css'
 
 
 export default function NavMain() {
