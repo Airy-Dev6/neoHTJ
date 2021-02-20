@@ -1,13 +1,16 @@
 import React from 'react'
 import { Col, Row } from 'reactstrap'
+import NavMain from './../../Components/NavMain'
 
-export default function index() {
+export default function Home() {
   return (
-    <div>
-      <Row>
-        <Col xs="3">
-        </Col>
-      </Row>
-    </div>
+    <Row>
+      <NavMain></NavMain>
+      <Col>
+        <p>hola desde home</p>
+      </Col>
+      
+    </Row>
+    
   )
 }
