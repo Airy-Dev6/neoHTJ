@@ -6,7 +6,7 @@ import './style.css'
 
 export default function FormSchool() {
 
-  const [editable, setEditable] = useState(false);
+  
 
   const [newSchool, setNewSchool] = useState({
     date:{
@@ -22,9 +22,7 @@ export default function FormSchool() {
 
   
 
-  const toggleEdition = () => {
-    setEditable(!editable);
-  };
+  
 
   const changeHandler = (event) => {
     let property = event.target.name
@@ -73,10 +71,8 @@ export default function FormSchool() {
         
 
         <div className="w-100 d-flex justify-content-center">
-          <Button type="button" className=" " outline color="success">Agregar</Button>
-          <Button type="button" outline color="success" onClick={toggleEdition, saveNewSchool}>
-            {editable ? "Guardar" : "Editar"}
-          </Button>
+          <Button type="button" className=" " onClick={saveNewSchool} outline color="success">Agregar</Button>
+          
         </div>
         
       </Form>

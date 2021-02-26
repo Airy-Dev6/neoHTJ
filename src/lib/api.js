@@ -2,12 +2,24 @@
 
 export default {
 
+  async getAllSchools(){
+    /*creamos una variable para almacenar la respuesta de la promesa, usamos await para esperar a que la promesa se resuelva*/
+    const response = await fetch( `https://neohtj-default-rtdb.firebaseio.com/schools/.json` )
+
+    /*regresamos la respuesta de la petición, usando await para esperar que resuelva el método .json()*/
+    return await response.json()
+  },
+  
+  async getSingleSchool( postId ){
+    const response = await fetch( `https://neohtj-default-rtdb.firebaseio.com/schools/${postId}.json` )
+
+    return await response.json()
+},
+
+
   login( userObject ){
       console.log(userObject)
       let { userName, password } = userObject
-
-      //!userObject && {status:"error", errorMsg:"debes proporcionar tus datos"}
-
       let response;
 
        userName === "airy@gmail.com" && password === "123" 
