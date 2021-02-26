@@ -1,5 +1,6 @@
 /* Creamos el archivo api.js, el cual contiene un objeto con todas las funciones que querramos exportar. Usamos export default para exportar todo el contenido del objeto*/
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
 
   async getAllSchools(){
