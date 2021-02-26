@@ -5,4 +5,8 @@
 .NavMain a {
   color: cyan;
 }
+
+.NavMain a.logout {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */

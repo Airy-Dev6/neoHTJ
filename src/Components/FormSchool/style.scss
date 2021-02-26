@@ -1,0 +1,9 @@
+.fsdiv {
+  height: 100vh;
+  border-color: aqua;
+
+  &.form-style {
+    border: 10px solid rgb(0, 204, 255);
+
+  }
+}

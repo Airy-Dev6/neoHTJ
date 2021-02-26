@@ -4,5 +4,9 @@
 
   a {
     color: cyan;
+
+    &.logout {
+      color: red;
+    }
   }
 }

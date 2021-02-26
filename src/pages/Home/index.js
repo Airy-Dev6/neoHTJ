@@ -7,7 +7,9 @@ export default function Home() {
     <Row>
       <NavMain></NavMain>
       <Col>
-        <p>hola desde home</p>
+        <div>
+          <p className="text-center">hola desde home</p>
+        </div>
       </Col>
       
     </Row>

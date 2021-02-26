@@ -1,0 +1,9 @@
+.fsdiv {
+  height: 100vh;
+  border-color: aqua;
+}
+
+.fsdiv.form-style {
+  border: 10px solid #00ccff;
+}
+/*# sourceMappingURL=style.css.map */
